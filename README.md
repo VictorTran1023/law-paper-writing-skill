@@ -72,6 +72,33 @@ codex exec --instructions ../law-paper-writing-skill/CODEX.md "帮我搭建论�
 
 > **注意**：Codex CLI 主要用于编程任务，但通过 `CODEX.md` 自定义指令同样可以胜任写作指导类任务。CODEX.md 内容与 SKILL.md 等价，已针对 Codex 的指令格式做了适配。
 
+### 🔐 在其他机器上配置推送权限
+
+公开仓库 **只读（clone）不需要认证**，任何人可直接克隆使用。如需贡献代码（push），每台新机器需配置一次 Git 凭据：
+
+**1. 生成 Personal Access Token**
+
+访问 https://github.com/settings/tokens → Generate new token (classic)：
+- Note：`hermes-agent-<机器名>`
+- Expiration：90 days
+- 勾选 `repo`
+
+**2. 在终端中配置**
+
+```bash
+# 设置 Git 用户信息
+git config --global user.name "你的GitHub用户名"
+git config --global user.email "你的邮箱"
+
+# 用 Token 认证 gh CLI
+echo "ghp_你的Token" | gh auth login --with-token
+
+# 验证
+gh auth status
+```
+
+> Token 只显示一次，建议保存到密码管理器中。Token 过期后需重新生成并重复上述步骤。
+
 ## 💡 使用示例
 
 在 Hermes 对话中直接提及法学论文写作相关任务即可触发，也可以手动指定：
