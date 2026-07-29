@@ -33,6 +33,8 @@
 
 ## 🚀 安装
 
+### 方式一：Hermes Agent（推荐）
+
 ```bash
 # 克隆到 Hermes skills 目录
 git clone https://github.com/VictorTran1023/law-paper-writing-skill.git \
@@ -40,6 +42,35 @@ git clone https://github.com/VictorTran1023/law-paper-writing-skill.git \
 ```
 
 重启 Hermes 或发起新对话，Skill 会自动加载。
+
+### 方式二：OpenAI Codex CLI
+
+Codex CLI 通过 `CODEX.md` 文件加载自定义指令。有两种使用方式：
+
+**A. 克隆到项目并使用：**
+
+```bash
+# 克隆仓库
+git clone https://github.com/VictorTran1023/law-paper-writing-skill.git
+
+# 将 CODEX.md 复制到你的法学论文写作项目中
+cp law-paper-writing-skill/CODEX.md ./你的论文项目/
+
+# 在项目目录中运行 Codex（CODEX.md 会被自动加载）
+cd ./你的论文项目
+codex exec "帮我评估这个论文选题：……"
+```
+
+**B. 直接通过指令文件运行：**
+
+```bash
+# 克隆后，用 --instructions 指定指令文件
+git clone https://github.com/VictorTran1023/law-paper-writing-skill.git
+cd /your/paper/project
+codex exec --instructions ../law-paper-writing-skill/CODEX.md "帮我搭建论文大纲……"
+```
+
+> **注意**：Codex CLI 主要用于编程任务，但通过 `CODEX.md` 自定义指令同样可以胜任写作指导类任务。CODEX.md 内容与 SKILL.md 等价，已针对 Codex 的指令格式做了适配。
 
 ## 💡 使用示例
 
@@ -64,10 +95,12 @@ git clone https://github.com/VictorTran1023/law-paper-writing-skill.git \
 ```
 law-paper-writing-skill/
 ├── SKILL.md                 # Skill 主文件（Hermes 加载入口）
+├── CODEX.md                 # Codex CLI 兼容指令文件
 ├── references/
 │   └── README.md            # 详细说明文档
 ├── README.md                # 本文件（GitHub 首页）
-└── LICENSE                  # MIT 许可证
+├── LICENSE                  # MIT 许可证
+└── .gitignore
 ```
 
 ## ⚠️ 待确定事项
