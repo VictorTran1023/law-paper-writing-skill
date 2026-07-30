@@ -1,192 +1,308 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Hermes-Skill-blue?style=for-the-badge" alt="Hermes Skill">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT">
-  <img src="https://img.shields.io/badge/Version-1.0.0-lightgrey?style=for-the-badge" alt="Version 1.0.0">
+  <img src="assets/readme/paper-banner.png" alt="深蓝与象牙白构成的法学论文写作与证据链主题横幅" width="100%">
 </p>
 
-<h1 align="center">📝 中国法学 CSSCI 期刊论文写作方法论</h1>
+<h1 align="center">中国法学论文写作 Skill</h1>
 
 <p align="center">
-  <strong>适用于 <a href="https://hermes-agent.nousresearch.com/">Hermes Agent</a> 的法学学术写作 Skill</strong><br>
-  覆盖从问题意识确立到投稿管理的完整论文写作流程
+  <em>Chinese Legal Journal Writing Skill</em><br>
+  为中国法学期刊论文提供可追溯的证据链、完整引注与经核验的目标期刊适配流程。
 </p>
 
----
+<div align="center">
 
-## 📖 简介
+![Hermes: Local Skill](https://img.shields.io/badge/Hermes-Local%20Skill-193B5A?style=flat-square)
+![Codex: Local Skill](https://img.shields.io/badge/Codex-Local%20Skill-0F4C5C?style=flat-square)
+![Obsidian: Scoped Workflow](https://img.shields.io/badge/Obsidian-Scoped%20Workflow-483699?style=flat-square)
+![Citation Integrity: Guardrails](https://img.shields.io/badge/Citation%20Integrity-Guardrails-315C8D?style=flat-square)
+[![License: MIT](https://img.shields.io/badge/License-MIT-B08D57?style=flat-square)](LICENSE)
 
-本 Skill 提炼了一套系统化的**中国大陆法学类 CSSCI 期刊论文写作方法论**，将学术写作分解为可操作的步骤，帮助法学研究者从零开始构建一篇高质量的 CSSCI 期刊论文。
+</div>
 
-> 适用期刊：二十余本法学类 CSSCI 正刊（《法学研究》《中国法学》《中外法学》等），论文字数 1.5 万–2.5 万字。
+<p align="center">
+  <a href="#为什么使用">为什么使用</a> ·
+  <a href="#快速安装">快速安装</a> ·
+  <a href="#使用指南">使用指南</a> ·
+  <a href="#与-obsidian-配合">Obsidian</a> ·
+  <a href="#适用范围">适用范围</a>
+</p>
 
-## 🎯 涵盖内容
+## 为什么使用
 
-| 模块 | 核心内容 |
-|---|---|
-| **第一步：确立问题意识** | 法学问题的"规范性"判别标准、三大来源路径、循环往复的迭代方法论、**7 项选题自检清单** |
-| **第二步：参考文献搜集与分类** | 七大类参考文献体系（学术著作、论文、法律规范、党内法规、政策文件、案例、新闻报道） |
-| **第三步：论文结构写作** | "问题的提出→正文→结语→题目"四部分结构、并联/串联逻辑、字数区间与写作要点 |
-| **第四步：摘要与关键词** | 中文摘要四要素写法、英文摘要注意事项、关键词选取策略 |
-| **常见写作陷阱** | 8 大高频退稿原因自查表（含典型表现与修复方向） |
-| **引注规范** | 《法学引注手册》核心要点速查 |
-| **投稿与时间管理** | 四阶段时间线、期刊分类选择参考 |
+| 研究问题先行 | 每项主张可回溯 | 交付前有门禁 |
+|---|---|---|
+| 从一个可论证的主问题出发，明确研究范围、反方观点和真正的学术增量。 | 将正文主张连接到来源编号、原始资料与精确位置，而非在文末堆砌文献。 | 区分工作稿与最终稿；法律时效、引注、匿名和期刊要求均须完成核验。 |
 
-## 🚀 安装
+## 核心能力
 
-### 方式一：Hermes Agent（推荐）
+- 按选题诊断、研究、提纲、起草、修改、审核和期刊适配切换任务模式，不把局部任务拉成固定流水线。
+- 建立“主问题—分节主张—证据—引注—结论”链条，并记录重要反方材料与证据局限。
+- 区分法律规范、司法解释、会议纪要、案例、政策、数据与学术文献的真实身份、版本和核验状态。
+- 用稳定来源编号和正文脚注标识生成可继续编辑的工作稿；资料不完整时保留待核，而非补全。
+- 根据目标期刊的正式、现行要求逐项适配篇幅、摘要、关键词、匿名、引注与投稿事项。
+- 仅在用户指定范围内配合 Obsidian 资料；读取授权不等于写回授权。
+
+详细行为规则见 [SKILL.md](SKILL.md)。
+
+## 工作流程
+
+```text
+PLAN → RESEARCH → OUTLINE → DRAFT → REVISE → AUDIT
+```
+
+| 阶段 | 关键动作 | 可交付物 |
+|---|---|---|
+| `PLAN` | 收窄主问题、范围与资料边界 | 论文项目卡、待确认事项 |
+| `RESEARCH` | 分类材料并核验身份、版本、定位 | 来源登记、证据缺口 |
+| `OUTLINE` | 将章节主张连接到证据与反方材料 | 三级提纲、论点—证据—引注表 |
+| `DRAFT` | 分节论证并同步设置脚注标识 | 带待核项的工作稿 |
+| `REVISE` | 分别修订论证、结构与表达 | 修订稿、限制说明 |
+| `AUDIT` | 双向检查引注、法律时效与投稿条件 | 可交付的最终稿或待核清单 |
+
+`ADAPT` 是目标期刊已明确、要求已有正式来源且逐项核验后的适配模式；它可以在上述任一相关阶段介入，但不应替代审核。
+
+## 真实性与引用边界
+
+> 不得编造引用、页码、案号、法条或期刊要求。资料不完整时，保留 `[待核]`、缩窄表述或删除；不得把工作稿伪装成最终稿。
+
+- 每一项他人观点、引语、数据、案例、法律规范和非一般常识的外部事实，都应在对应正文后设置引注标识。
+- 最终稿中的来源性主张只能使用 `VERIFIED` 来源；`PARTIAL`、`LEAD_ONLY` 与 `UNUSABLE` 只能用于继续核查，不能静默升级。
+- CSSCI 是来源期刊评价体系，不是统一投稿格式。未核验目标期刊正式要求时，只能交付通用工作稿。
+- `[[Obsidian 双链]]`、文件名和本地路径只用于内部追踪，不能替代正式脚注，也不应出现在公开稿件中。
+
+## 快速安装
+
+### Hermes Agent
+
+Hermes 的 Skills System 文档将 `~/.hermes/skills/`列为本地 Skill 目录。以下克隆命令以仓库地址可访问为前提；私有仓库须先为当前 Git 客户端配置相应 GitHub 读取权限。
+
+PowerShell：
+
+```powershell
+git clone https://github.com/VictorTran1023/law-paper-writing-skill.git `
+  "$HOME\.hermes\skills\chinese-law-paper-writing"
+```
+
+Bash：
 
 ```bash
-# 克隆到 Hermes skills 目录
 git clone https://github.com/VictorTran1023/law-paper-writing-skill.git \
-  "$HOME/AppData/Local/hermes/skills/writing/chinese-law-paper-writing"
+  ~/.hermes/skills/chinese-law-paper-writing
 ```
 
-重启 Hermes 或发起新对话，Skill 会自动加载。
+参考：[Hermes Skills System](https://hermes-agent.nousresearch.com/docs/user-guide/features/skills)、[Working with Skills](https://hermes-agent.nousresearch.com/docs/guides/work-with-skills/)。
 
-### 方式二：OpenAI Codex CLI
+### OpenAI Codex
 
-Codex CLI 通过 `CODEX.md` 文件加载自定义指令。有两种使用方式：
+PowerShell：
 
-**A. 克隆到项目并使用：**
-
-```bash
-# 克隆仓库
-git clone https://github.com/VictorTran1023/law-paper-writing-skill.git
-
-# 将 CODEX.md 复制到你的法学论文写作项目中
-cp law-paper-writing-skill/CODEX.md ./你的论文项目/
-
-# 在项目目录中运行 Codex（CODEX.md 会被自动加载）
-cd ./你的论文项目
-codex exec "帮我评估这个论文选题：……"
+```powershell
+git clone https://github.com/VictorTran1023/law-paper-writing-skill.git `
+  "$HOME\.codex\skills\chinese-law-paper-writing"
 ```
 
-**B. 直接通过指令文件运行：**
+Bash：
 
 ```bash
-# 克隆后，用 --instructions 指定指令文件
-git clone https://github.com/VictorTran1023/law-paper-writing-skill.git
-cd /your/paper/project
-codex exec --instructions ../law-paper-writing-skill/CODEX.md "帮我搭建论文大纲……"
+git clone https://github.com/VictorTran1023/law-paper-writing-skill.git \
+  ~/.codex/skills/chinese-law-paper-writing
 ```
 
-> **注意**：Codex CLI 主要用于编程任务，但通过 `CODEX.md` 自定义指令同样可以胜任写作指导类任务。CODEX.md 内容与 SKILL.md 等价，已针对 Codex 的指令格式做了适配。
+新建任务后，直接要求使用 `chinese-law-paper-writing`。Codex 的项目级持久指令使用 `AGENTS.md`，不是 `CODEX.md`；参见 [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)。
 
-### 🔐 在其他机器上配置推送权限
+## 使用指南
 
-公开仓库 **只读（clone）不需要认证**，任何人可直接克隆使用。如需贡献代码（push），每台新机器需配置一次 Git 凭据：
+### 1. 准备材料
 
-**1. 生成 Personal Access Token**
+先确认以下输入；不完整但不改变方向的项目可以暂定，可能影响结论、真实性或期刊适配的项目应先补充。
 
-访问 https://github.com/settings/tokens → Generate new token (classic)：
-- Note：`hermes-agent-<机器名>`
-- Expiration：90 days
-- 勾选 `repo`
+- [ ] 一个可回答的研究问题，以及暂定题目、法域和明确不处理的范围
+- [ ] 允许读取的资料范围：原始文件、正式网页、数据库导出或经批准的 Obsidian 项目入口
+- [ ] 法律与事实资料的截止日期，以及需要核验的法律版本、案例和数据
+- [ ] 目标期刊及其正式投稿要求；未指定时明确按通用工作稿处理
+- [ ] 交付物：项目卡、提纲、分节工作稿、全文修订、审核报告或期刊适配稿
 
-**2. 在终端中配置**
+从 [论文项目卡](assets/templates/paper-project-brief.md) 和 [目标期刊卡](assets/templates/journal-profile.md) 开始记录这些边界；其中的 Obsidian 读取范围、写回授权和具体写回文件都应如实填写。
+
+### 2. 选择模式
+
+| 模式 | 何时使用 | 主要输出 |
+|---|---|---|
+| `PLAN` | 选题仍宽泛或材料边界未定 | 研究问题、范围、项目卡 |
+| `RESEARCH` | 需要识别材料类型、来源状态和证据缺口 | 分类结果、来源登记 |
+| `OUTLINE` | 已有基础材料，需要形成主张链 | 章节功能、提纲、论点表 |
+| `DRAFT` | 需要写一个章节或工作稿 | 带引注标识的草稿 |
+| `REVISE` | 已有文本，需要改论证、结构或表达 | 修订建议或修订稿 |
+| `AUDIT` | 准备定稿或提交前 | 引注、法律时效与投稿检查 |
+| `ADAPT` | 目标期刊要求已核验 | 按已核验要求调整的稿件 |
+
+### 3. 调用 Skill
+
+在新会话中给 Hermes：
+
+```text
+使用 chinese-law-paper-writing 的 OUTLINE 模式。根据我提供的论文项目卡、来源登记和允许读取的资料，
+为“行政公益诉讼中调查核实权的边界”建立三级提纲与论点—证据—引注表。
+未定位原文页码的材料必须保留待核标记；不要读取或写入未指定的 Obsidian 文件。
+```
+
+在 Codex 新任务中给出同样清楚的范围：
+
+```text
+使用 chinese-law-paper-writing 的 AUDIT 模式，审核以下工作稿及其来源登记。
+逐项列出正文引注断链、法律或案例版本待核项和不符合已核验期刊要求的地方；
+不要补造脚注、页码或期刊规则，也不要写回任何资料库文件。
+```
+
+这些是自然语言任务说明，不是命令行接口；只提供你已批准的材料和路径。
+
+### 4. 建立项目卡、来源登记与论点表
+
+1. 用 [论文项目卡](assets/templates/paper-project-brief.md) 固定问题、资料范围、截止日期、目标期刊和交付格式。
+2. 用 [来源登记](assets/templates/source-register.md) 为每项资料分配稳定的 `S001` 等来源编号，并记录原始位置、精确定位、核验日期和 `VERIFIED / PARTIAL / LEAD_ONLY / UNUSABLE` 状态。
+3. 起草前用 [论点—证据—引注表](assets/templates/claim-evidence-matrix.md) 说明每一节主张由哪项证据支持、支持到什么程度，以及可能的反方材料。
+
+来源登记记录“资料本身”，论点表记录“资料如何支持主张”；两者不能互相替代。
+
+### 5. 生成工作稿
+
+在写作时同步插入脚注标识。来源已定位时可先使用：
+
+```markdown
+相关研究提出，调查核实权的边界应受法定目的与程序保障共同约束。[^S001]
+
+[^S001]: 作者：《题名》，载《期刊》年份第X期，第X页。
+```
+
+资料尚缺精确页码或原文时，宁可留下可见的待核项：
+
+```markdown
+该观点与现有规范的衔接仍需核对原文。[^待核引注-01]
+
+[^待核引注-01]: [待核：已知材料线索，缺少原文页码；不得进入最终稿]
+```
+
+工作稿允许保留待核项、暂定参数和内部来源编号；最终稿不允许。将 Markdown 脚注转换为 DOCX 等投稿格式前，仍须服从目标期刊已经核验的要求。
+
+### 6. 完成终检
+
+先把工作稿中的每一个待核、待确认和断链项处理完，再称为最终稿。使用 [引注审核清单](assets/templates/citation-audit.md) 做正文—脚注—来源登记—原始资料的双向检查；再用 [投稿前检查清单](assets/templates/submission-checklist.md) 核对期刊要求、匿名、截止日期和公开信息风险。
+
+### 7. 常用任务提示词
+
+<details>
+<summary>展开可直接改写的提示词</summary>
+
+#### 选题诊断
+
+```text
+使用 chinese-law-paper-writing 的 PLAN 模式，诊断以下选题：……
+请给出主问题、已有研究可能的不足、可验证的初步判断、重要反方观点与明确排除范围。
+只能根据我提供的材料判断；不确定处标为待核。
+```
+
+#### 论文提纲
+
+```text
+使用 OUTLINE 模式。依据以下项目卡、来源登记和论点表，为论文生成三级提纲。
+逐节写明功能、核心主张、所需证据、反方材料和引注缺口；不要为凑结构强行固定章节数。
+```
+
+#### 分节起草
+
+```text
+使用 DRAFT 模式，起草“……”一节。只使用以下 VERIFIED 来源与明确允许的 PARTIAL 线索；
+在每个来源性主张后放入脚注标识，缺页码或原文定位时使用待核引注，不得补造信息。
+```
+
+#### 引注审核
+
+```text
+使用 AUDIT 模式，检查以下正文、脚注和来源登记。
+从正文到脚注、从脚注到来源编号和原始资料双向核查；输出断链、待核项、法律版本问题与修复顺序。
+```
+
+#### 期刊适配
+
+```text
+使用 ADAPT 模式。依据以下目标期刊的正式要求及核验日期，调整稿件的篇幅、摘要、关键词、引注和匿名信息。
+对没有正式来源或存在冲突的要求保留待确认，不得把通用惯例写成期刊规则。
+```
+
+</details>
+
+## 与 Obsidian 配合
+
+建议由 Obsidian 管理原始资料、来源笔记和项目索引，由 Skill 在用户指定范围内完成研究、写作与审核：
+
+```text
+项目索引
+→ 来源笔记与原始资料
+→ 来源登记与论点—证据—引注表
+→ 带脚注标识的工作稿
+→ 引用和法律时效审核
+→ 投稿稿
+```
+
+每条正式引注都应能追溯到原始文件或正式网页及精确位置。默认不扫描整个 Vault，也不写回；只有用户明确授权且指定目标文件后，才可修改这些文件。公开稿件中不要暴露本地路径、私人笔记或仅供管理的双链。
+
+![从资料、来源登记和论点到正式引注与论文稿件的证据链示意](assets/readme/paper-evidence-chain.png)
+
+## 仓库结构
+
+<details>
+<summary>展开目录与用途</summary>
+
+```text
+law-paper-writing-skill/
+├── SKILL.md                         # 任务路由与硬门禁
+├── references/
+│   ├── workflow.md                   # 论文工作流
+│   ├── evidence-and-legal-validity.md # 证据与法律资料核验
+│   ├── citation-integrity.md         # 引注完整性
+│   ├── journal-adaptation.md         # 目标期刊适配
+│   └── obsidian-hermes-workflow.md   # Obsidian 协作边界
+├── assets/
+│   ├── readme/                       # README 视觉资产
+│   └── templates/                    # 项目卡、来源登记与检查清单
+├── evals/
+│   └── pressure-tests.md             # 边界压力测试
+├── README.md
+└── LICENSE
+```
+
+</details>
+
+<details>
+<summary>维护者：在其他机器上配置推送权限</summary>
+
+公开仓库可直接克隆；推送需要相应仓库写入权限，并在每台新机器上完成一次认证。不要把 Personal Access Token 写进仓库、脚本或终端命令历史。
+
+Windows 推荐使用 Git for Windows 自带的 Git Credential Manager，在首次 HTTPS 推送时按浏览器提示登录；也可使用 GitHub CLI：
 
 ```bash
-# 设置 Git 用户信息
-git config --global user.name "你的GitHub用户名"
+git config --global user.name "你的 GitHub 用户名"
 git config --global user.email "你的邮箱"
-
-# 用 Token 认证 gh CLI
-echo "ghp_你的Token" | gh auth login --with-token
-
-# 验证
+gh auth login --web --git-protocol https
 gh auth status
 ```
 
-> Token 只显示一次，建议保存到密码管理器中。Token 过期后需重新生成并重复上述步骤。
+参考：[GitHub 凭据缓存说明](https://docs.github.com/en/get-started/git-basics/caching-your-github-credentials-in-git)、[GitHub CLI 登录说明](https://cli.github.com/manual/gh_auth_login)。
 
-## 💡 使用示例
+</details>
 
-在 Hermes 对话中直接提及法学论文写作相关任务即可触发，也可以手动指定：
+## 适用范围
 
-```
-请按照 chinese-law-paper-writing skill 的方法，
-帮我分析"行政公益诉讼中检察机关调查核实权的边界"
-这个问题意识是否适合作为一篇 CSSCI 论文的选题。
-```
+适用于中国法学期刊论文的选题、研究材料组织、提纲、分节或全文工作稿、修订、引注审核和已核验的目标期刊适配。
 
-**典型场景**：
-- 🎯 选题评估与问题意识打磨
-- 📋 论文大纲搭建
-- 📚 参考文献范围规划
-- 🔍 正文逻辑结构审查
-- ✅ 常见写作陷阱自查
-- 📤 投稿策略选择
+不适用于：
 
-## 📂 文件结构
+- 法律专著、教材、评注或实务指南；请使用 [chinese-law-book-writing](https://github.com/VictorTran1023/chinese-law-book-writing-skill)；
+- 法律意见书、合同、诉状或具体客户法律建议；
+- 硕士、博士等学位论文；
+- 英文期刊或其他学科论文；
+- 自动生成无法核验的参考文献，或声称“保证录用”的稿件。
 
-```
-law-paper-writing-skill/
-├── SKILL.md                 # Skill 主文件（Hermes 加载入口）
-├── CODEX.md                 # Codex CLI 兼容指令文件
-├── references/
-│   └── README.md            # 详细说明文档
-├── README.md                # 本文件（GitHub 首页）
-├── LICENSE                  # MIT 许可证
-└── .gitignore
-```
+## 来源说明
 
-## ⚠️ 待确定事项
-
-本 Skill 目前存在以下**需要用户在使用前自行确认**的事项，这些不是 Skill 的缺陷，而是方法论在落地时必须由作者本人做出的判断：
-
-| # | 待确定事项 | 说明 | 建议 |
-|---|---|---|---|
-| 1 | **目标期刊选定** | 二十余本 CSSCI 法学期刊偏好各异——有的偏理论深度，有的偏制度分析，有的偏实证研究。同一篇论文投不同期刊，写作策略可能完全不同 | 动笔前确定 2–3 本目标期刊，精读每本近两年发表论文 5–10 篇以感知偏好 |
-| 2 | **法学二级学科定位** | 法理学、宪法学、行政法学、刑法学、民商法学等学科的论证范式差异显著。Skill 做了统一化处理，但实际写作中需要按学科惯例调整 | 参考文献搜集中锁定本学科的高被引论文，以它们为写作范本 |
-| 3 | **实证研究方法的取舍** | 当前法学界越来越重视裁判文书大数据分析、田野调查、深度访谈等实证方法。如果你的选题需要实证支撑，Skill 未提供具体方法指引 | 需要额外补充实证研究方法论的学习，或考虑与具备实证能力的合作者协作 |
-| 4 | **比较法材料的边界** | 引用域外法材料时，多少算"充分"、多少算"堆砌"，取决于选题本身和期刊偏好，没有统一标准 | 以目标期刊已发表论文中的比较法使用密度为参照 |
-| 5 | **查重与 AI 使用边界** | 各期刊对查重率、AI 辅助写作的接受程度不同（有的明确禁止 AI 生成正文内容），Skill 未涉及 | 投稿前查阅目标期刊最新《投稿须知》中的学术伦理条款 |
-| 6 | **审稿周期与毕业/职称时间线** | CSSCI 从投稿到见刊通常 6–18 个月，部分期刊甚至更长。如果你的发表有硬性截止日期，需倒推时间规划 | 优先选择审稿周期透明的期刊，同时准备备选投稿方案 |
-
-## ⚠️ 已知风险与局限
-
-使用本 Skill 时需注意以下结构性风险，它们源于方法论本身的边界：
-
-### 方法论风险
-
-| 风险 | 严重程度 | 说明 |
-|---|---|---|
-| **框架过度简化** | 🟡 中 | Skill 将法学论文写作简化为四步流程，但实际写作是非线性的——你可能在写正文第三章时发现问题意识需要根本性重构，这不是方法的失败，而是正常的研究迭代 |
-| **缺乏反面例证** | 🟡 中 | 方法论告诉你"怎么做是对的"，但没有提供"怎么做是错的"的对比样本。初学者可能在自以为正确的情况下写出不符合期刊标准的论文 |
-| **"规范性"边界模糊** | 🟠 较高 | 法经济学、法社会学、法政治学等交叉领域的选题，法学编辑可能认为"不是法学问题"而退稿。Skill 给出的判别标准（"抓住规范性和法律依据"）在交叉领域操作性不足 |
-| **时效性衰减** | 🟡 中 | 期刊偏好、CSSCI 目录、投稿规范会逐年变化。Skill 中的期刊举例和引用标准可能在 1–2 年后过时 |
-
-### 使用风险
-
-| 风险 | 严重程度 | 说明 |
-|---|---|---|
-| **过度依赖方法论** | 🟠 较高 | Skill 是辅助工具，不能替代导师指导和同行评议。一篇论文的质量最终取决于作者对问题的理解深度和论证力度，方法框架解决不了"问题本身有没有价值" |
-| **忽视学科特殊性** | 🟠 较高 | 如果你研究的是特定学科的冷门方向，Skill 的通用建议可能不适用。例如法制史论文的参考文献结构、刑法教义学论文的论证方式，与 Skill 中的通用框架差异较大 |
-| **时间估算过于乐观** | 🟡 中 | Skill 中给出的"选题 1–3 月、初稿 2–4 月"是基于经验的粗略估算，实际耗时因人、因选题而异，尤其是第一次写 CSSCI 论文的研究者通常会超出估算 |
-| **Skill 非官方背书** | 🔴 高 | 本 Skill 源于个人经验文档的提炼，**不构成任何 CSSCI 期刊的官方写作指南**。没有任何方法论能保证论文被录用——最终取决于论文本身的学术质量、选题时效性和审稿人的判断 |
-
-### 明确不适用的场景
-
-- ❌ **CSSCI 扩展版和集刊**：写作标准可能低于正刊，部分建议（如字数、结构）不一定适用
-- ❌ **法学以外的社科期刊**：经济学、管理学、社会学等学科的论文范式完全不同
-- ❌ **学位论文（硕士/博士）**：学位论文有独立的体例、文献综述和字数要求，不能直接套用期刊论文的写法
-- ❌ **英文 SSCI 法学期刊**：国际发表的论证结构、引注格式、选题偏好与中文 CSSCI 差异巨大
-
-## 🤝 贡献
-
-欢迎通过 Issue 和 Pull Request 贡献改进：
-
-- 补充法学二级学科的写作差异
-- 增加具体的例证（好选题 vs 差选题）
-- 更新期刊投录信息
-- 补充实证研究方法指引
-
-## 📄 许可证
-
-MIT License © 2025 VictorTran1023
-
----
-
-<p align="center">
-  <sub>此 Skill 方法论源于一份法学 CSSCI 论文写作内部文档，经提炼与结构化后形成。</sub>
-</p>
+初始方法源于《关于中国法学类CSSCI期刊发表论文的写作过程与方法》，并在仓库内扩展为目标期刊适配、证据核验、引用完整性、法律时效和 Obsidian 协作规则。它提供的是可审查的写作流程，不是任何 Hermes、OpenAI、Obsidian、CSSCI 期刊或其他机构的官方指南、认证或录用承诺。
