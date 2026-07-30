@@ -122,7 +122,7 @@ git clone https://github.com/VictorTran1023/law-paper-writing-skill.git \
 - [ ] 目标期刊及其正式投稿要求；未指定时明确按通用工作稿处理
 - [ ] 交付物：项目卡、提纲、分节工作稿、全文修订、审核报告或期刊适配稿
 
-从 [论文项目卡](assets/templates/paper-project-brief.md) 开始记录这些边界；其中的 Obsidian 读取范围、写回授权和具体写回文件都应如实填写。
+从 [论文项目卡](assets/templates/paper-project-brief.md) 和 [目标期刊卡](assets/templates/journal-profile.md) 开始记录这些边界；其中的 Obsidian 读取范围、写回授权和具体写回文件都应如实填写。
 
 ### 2. 选择模式
 
