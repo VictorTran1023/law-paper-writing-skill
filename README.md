@@ -273,6 +273,24 @@ law-paper-writing-skill/
 
 </details>
 
+<details>
+<summary>维护者：在其他机器上配置推送权限</summary>
+
+公开仓库可直接克隆；推送需要相应仓库写入权限，并在每台新机器上完成一次认证。不要把 Personal Access Token 写进仓库、脚本或终端命令历史。
+
+Windows 推荐使用 Git for Windows 自带的 Git Credential Manager，在首次 HTTPS 推送时按浏览器提示登录；也可使用 GitHub CLI：
+
+```bash
+git config --global user.name "你的 GitHub 用户名"
+git config --global user.email "你的邮箱"
+gh auth login --web --git-protocol https
+gh auth status
+```
+
+参考：[GitHub 凭据缓存说明](https://docs.github.com/en/get-started/git-basics/caching-your-github-credentials-in-git)、[GitHub CLI 登录说明](https://cli.github.com/manual/gh_auth_login)。
+
+</details>
+
 ## 适用范围
 
 适用于中国法学期刊论文的选题、研究材料组织、提纲、分节或全文工作稿、修订、引注审核和已核验的目标期刊适配。
