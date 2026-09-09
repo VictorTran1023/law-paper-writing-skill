@@ -61,6 +61,8 @@ PLAN → RESEARCH → OUTLINE → DRAFT → REVISE → AUDIT
 
 `ADAPT` 是目标期刊已明确、要求已有正式来源且逐项核验后的适配模式；它可以在上述任一相关阶段介入，但不应替代审核。
 
+论证或审稿修改任务可使用 [论证诊断](references/argumentation-diagnostics.md)，检查学术增量、框架根据、章节衔接，并以 [反馈落实表](assets/templates/revision-response.md) 回查修改是否回应意见。它不将单篇稿件的字数、标题或行文偏好设为普遍要求。
+
 ## 真实性与引用边界
 
 > 不得编造引用、页码、案号、法条或期刊要求。资料不完整时，保留 `[待核]`、缩窄表述或删除；不得把工作稿伪装成最终稿。
@@ -258,6 +260,7 @@ law-paper-writing-skill/
 ├── SKILL.md                         # 任务路由与硬门禁
 ├── references/
 │   ├── workflow.md                   # 论文工作流
+│   ├── argumentation-diagnostics.md  # 学术增量、框架、章节与反馈诊断
 │   ├── evidence-and-legal-validity.md # 证据与法律资料核验
 │   ├── citation-integrity.md         # 引注完整性
 │   ├── journal-adaptation.md         # 目标期刊适配
@@ -266,7 +269,8 @@ law-paper-writing-skill/
 │   ├── readme/                       # README 视觉资产
 │   └── templates/                    # 项目卡、来源登记与检查清单
 ├── evals/
-│   └── pressure-tests.md             # 边界压力测试
+│   ├── pressure-tests.md             # 边界压力测试
+│   └── argumentation-cases.md         # 论证诊断与避免误判的场景
 ├── README.md
 └── LICENSE
 ```

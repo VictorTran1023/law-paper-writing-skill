@@ -28,6 +28,7 @@ description: Use when the user is planning, drafting, revising, or checking a Ch
 ## 按需读取参考文件
 
 - 执行完整流程、选题、提纲、起草或修改时，读取 [workflow.md](references/workflow.md)。
+- 检查学术增量、核心框架、章节衔接，或依据审稿意见修改时，读取 [argumentation-diagnostics.md](references/argumentation-diagnostics.md)；按当前任务选用检查，不把局部润色扩展成全文审核。
 - 使用法律规范、案例、政策、数据或学术文献时，读取 [evidence-and-legal-validity.md](references/evidence-and-legal-validity.md)。
 - 起草正文、补引注、生成全文或执行引用审核时，必须读取 [citation-integrity.md](references/citation-integrity.md)。
 - 适配期刊、摘要、关键词、匿名或投稿要求时，读取 [journal-adaptation.md](references/journal-adaptation.md)。
