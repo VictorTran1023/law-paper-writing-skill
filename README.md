@@ -63,6 +63,8 @@
 
 这些检查保留不同研究方式的空间：新材料、反例和适用边界也可以构成贡献；并列章节不必改成递进结构；纯理论任务不强制补裁判案例。字数、节数和标题偏好不会自动成为所有论文的通则。章节表和反馈表按需使用，单条意见可以直接用短段落说明。
 
+核心结论须呈现完整推理链，不以断言出现；改稿交付时主动附新旧稿继承说明（沿用、修改、新增及各自依据）。
+
 详细规则见 [论证诊断](references/argumentation-diagnostics.md)，记录模板见 [章节衔接](assets/templates/claim-evidence-matrix.md) 与 [反馈落实表](assets/templates/revision-response.md)。
 
 ## 研究与写作基础
@@ -72,6 +74,9 @@
 - **同步引注**：起草时设置正文脚注标识，缺原文或页码时保留待核，生成可继续编辑的工作稿。
 - **期刊适配**：依据目标期刊正式、现行要求调整篇幅、摘要、关键词、匿名和引注。
 - **资料协作**：仅使用指定范围内的 Obsidian 或其他资料；读取授权不等于写回授权。
+- **材料边界**：写作用料限于已提供或已核验登记的来源；材料未覆盖时如实说明并保留待核，不用模型记忆补全。
+- **需求拆解**：需求模糊或新项目启动时，先用五问确认任务（做什么、给谁用、解决什么、用什么资料、交付什么）。
+- **推理链**：核心结论呈现完整推理链（证据→归纳→排除竞争解释→反例→结论），不以断言出现。
 
 详细任务路由和交付要求见 [SKILL.md](SKILL.md)。
 
@@ -83,6 +88,7 @@
 - 最终稿中的来源性主张只能使用 `VERIFIED` 来源；`PARTIAL`、`LEAD_ONLY` 与 `UNUSABLE` 只能用于继续核查，不能静默升级。
 - CSSCI 是来源期刊评价体系，不是统一投稿格式。未核验目标期刊正式要求时，只能交付通用工作稿。
 - `[[Obsidian 双链]]`、文件名和本地路径只用于内部追踪，不能替代正式脚注，也不应出现在公开稿件中。
+- 写作用料限于已提供或已核验登记的材料；材料未覆盖的问题如实说明并保留待核，不用模型记忆补全。
 
 ## 快速安装
 
@@ -317,7 +323,8 @@ law-paper-writing-skill/
 ├── SKILL.md                         # 任务路由与硬门禁
 ├── references/
 │   ├── workflow.md                   # 论文工作流
-│   ├── argumentation-diagnostics.md  # 学术增量、框架、章节与反馈诊断
+│   ├── requirement-decomposition.md  # 需求拆解（五问）
+│   ├── argumentation-diagnostics.md  # 学术增量、框架、推理链、章节与反馈诊断
 │   ├── evidence-and-legal-validity.md # 证据与法律资料核验
 │   ├── citation-integrity.md         # 引注完整性
 │   ├── journal-adaptation.md         # 目标期刊适配
@@ -331,6 +338,7 @@ law-paper-writing-skill/
 ├── evals/
 │   ├── pressure-tests.md             # 边界压力测试
 │   ├── argumentation-cases.md         # 论证诊断与避免误判的场景
+│   ├── generic-fusion-cases.md       # 通用规则融合新增场景
 │   └── 2026-09-09-review.md           # 本轮检验方法、结果与限制
 ├── README.md
 └── LICENSE
@@ -370,7 +378,7 @@ gh auth status
 
 ## 检验与能力边界
 
-本轮已完成技能元数据、相对链接和差异检查，并保留既有真实性与资料权限规则。检验材料包括 [12 个论证诊断场景](evals/argumentation-cases.md) 和 [9 个原有边界场景](evals/pressure-tests.md)，覆盖论证缺口，也覆盖不应误判的合理写法。
+本轮已完成技能元数据、相对链接和差异检查，并保留既有真实性与资料权限规则。检验材料包括 [12 个论证诊断场景](evals/argumentation-cases.md) 和 [9 个原有边界场景](evals/pressure-tests.md)，覆盖论证缺口，也覆盖不应误判的合理写法。2026-09 融合新增 6 个通用场景（材料边界、需求拆解、推理链、改稿继承、统计限定），见 [generic-fusion-cases.md](evals/generic-fusion-cases.md)。
 
 [检验记录](evals/2026-09-09-review.md) 是同一助手完成的桌面走查，不是独立模型盲测或多模型性能比较。它不证明特定模型能稳定识别所有论文问题，也不代表实际论文的法律、案例与文献已经核验。运行效果仍取决于材料完整性、模型和可用的检索、文档工具。
 
