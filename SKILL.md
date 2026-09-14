@@ -28,7 +28,8 @@ description: Use when the user is planning, drafting, revising, or checking a Ch
 ## 按需读取参考文件
 
 - 执行完整流程、选题、提纲、起草或修改时，读取 [workflow.md](references/workflow.md)。
-- 检查学术增量、核心框架、章节衔接，或依据审稿意见修改时，读取 [argumentation-diagnostics.md](references/argumentation-diagnostics.md)；按当前任务选用检查，不把局部润色扩展成全文审核。
+- 需求模糊、开始新项目或用户未说明研究思路时，读取 [requirement-decomposition.md](references/requirement-decomposition.md)。
+- 检查学术增量、核心框架、推理链完整性、章节衔接，或依据审稿意见修改时，读取 [argumentation-diagnostics.md](references/argumentation-diagnostics.md)；按当前任务选用检查，不把局部润色扩展成全文审核。
 - 使用法律规范、案例、政策、数据或学术文献时，读取 [evidence-and-legal-validity.md](references/evidence-and-legal-validity.md)。
 - 起草正文、补引注、生成全文或执行引用审核时，必须读取 [citation-integrity.md](references/citation-integrity.md)。
 - 适配期刊、摘要、关键词、匿名或投稿要求时，读取 [journal-adaptation.md](references/journal-adaptation.md)。
@@ -45,11 +46,19 @@ description: Use when the user is planning, drafting, revising, or checking a Ch
 5. 法律与事实资料截止日期；
 6. 引注格式、篇幅和文件格式。
 
-缺失信息不影响方向时，使用明确标注的暂定方案继续；缺失信息会改变结论、期刊适配或来源真实性时，先询问。不得将模型记忆当作已核验来源。
+缺失信息不影响方向时，使用明确标注的暂定方案继续；缺失信息会改变结论、期刊适配或来源真实性时，先询问。不得将模型记忆当作已核验来源。需求模糊或用户未说明研究思路时，先用五问拆解（见 [requirement-decomposition.md](references/requirement-decomposition.md)），不猜测方向。
 
 使用 [paper-project-brief.md](assets/templates/paper-project-brief.md) 建立项目卡。未指定目标期刊时，只能生成“通用工作稿”，不得声称存在统一的 CSSCI 字数、摘要、关键词、节数、引注或审稿期限。
 
 用户要求立即排版时，可以给出明确但可逆的“本稿临时参数”；必须逐项标注为暂定，不得替目标期刊设定一稿多投、撤稿、独家等待、匿名或附件规则。
+
+## 遵守材料边界与查询纪律
+
+写作用料只允许两类：用户提供的材料，以及用户授权范围内、经核验并登记过的正式来源。模型记忆永远不是来源。
+
+- 材料未覆盖的问题：如实说明“现有材料中没有”，保留 `[待核]` 或标 `[来源不明]`，并给出补充方案（去哪里查、补什么）；不得用模型记忆补全或凭印象脑补。
+- 占位材料不算掌握：只有条目、摘要线索而无原文、页码、条文或案号的材料，按 `LEAD_ONLY` 对待；取得原文之前不得据此写具体表述。
+- 联网检索属于材料获取与核验环节：新获取的材料先登记来源台账（来源、定位、核验日期、状态）再进入写作；写作与查询环节不引入台账以外的外部事实。
 
 ## 执行五项硬门禁
 
@@ -79,6 +88,8 @@ description: Use when the user is planning, drafting, revising, or checking a Ch
 - 对核心主张至少检查一个重要反方解释或反例。
 
 不要用“已有三篇相似论文”“必须三至四节”“必须固定字数”等机械阈值代替学术判断。
+
+结论不得以断言出现。每个核心结论应呈现完整推理链：证据（分组呈现，而非单例举例）→ 归纳共同特征 → 排除竞争解释 → 处理反方或反例 → 得出结论；论证按“材料 → 规律 → 结论”的顺序展开，使读者能沿材料复核归纳。实证归纳、规范性与统计性命题的具体要求及自查清单见 [argumentation-diagnostics.md](references/argumentation-diagnostics.md)。
 
 ## 建立论点—证据—引注链
 
@@ -146,4 +157,6 @@ description: Use when the user is planning, drafting, revising, or checking a Ch
 - 把资料的存在误当作资料已被核验；
 - 把 Obsidian 内部链接直接当作正式引注；
 - 把一般经验值写成所有 CSSCI 法学期刊的统一标准；
-- 为迎合用户要求而补造引用信息。
+- 为迎合用户要求而补造引用信息；
+- 结语重复正文而不给出答案；
+- 需求模糊时自行猜测方向动笔。
