@@ -1,6 +1,8 @@
 ---
 name: chinese-law-paper-writing
-description: Use when the user is planning, drafting, revising, or checking a Chinese legal journal article, including CSSCI投稿论文、法学期刊论文、论文选题、提纲、正文、摘要、引注、Obsidian资料引用或目标期刊适配；do not use for books, theses or dissertations, contracts, legal opinions, pleadings, or client advice.
+description: Use when the user is planning, drafting, revising, or checking a Chinese legal journal article, including CSSCI投稿论文、法学期刊论文、论文选题、提纲、正文、摘要、引注、Obsidian资料引用、目标期刊适配、需求拆解（五问）、材料边界、推理链审查或版本管理；do not use for books, theses or dissertations, contracts, legal opinions, pleadings, or client advice.
+metadata:
+  version: "1.1.0"
 ---
 
 # 中国法学论文写作
@@ -58,7 +60,7 @@ description: Use when the user is planning, drafting, revising, or checking a Ch
 
 - 材料未覆盖的问题：如实说明“现有材料中没有”，保留 `[待核]` 或标 `[来源不明]`，并给出补充方案（去哪里查、补什么）；不得用模型记忆补全或凭印象脑补。
 - 占位材料不算掌握：只有条目、摘要线索而无原文、页码、条文或案号的材料，按 `LEAD_ONLY` 对待；取得原文之前不得据此写具体表述。
-- 联网检索属于材料获取与核验环节：新获取的材料先登记来源台账（来源、定位、核验日期、状态）再进入写作；写作与查询环节不引入台账以外的外部事实。
+- 联网检索属于材料获取与核验环节：新获取的材料先完成来源登记（来源、定位、核验日期、状态）再进入写作；写作与查询环节不引入来源登记以外的外部事实。
 
 ## 执行五项硬门禁
 
@@ -134,6 +136,7 @@ description: Use when the user is planning, drafting, revising, or checking a Ch
 - `[待核引注-01：缺页码]`
 - `[待核案例-02：缺正式案号]`
 - `[待核法条-03：需确认效力状态]`
+- `[来源不明：现有材料未覆盖]`
 - 明确标注的暂定结构或篇幅预算
 
 ### 最终稿必须满足
