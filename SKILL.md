@@ -1,8 +1,8 @@
 ---
 name: chinese-law-paper-writing
-description: Use when the user is planning, drafting, revising, or checking a Chinese legal journal article, including CSSCI投稿论文、法学期刊论文、论文选题、提纲、正文、摘要、引注、Obsidian资料引用、目标期刊适配、需求拆解（五问）、材料边界、推理链审查或版本管理；do not use for books, theses or dissertations, contracts, legal opinions, pleadings, or client advice.
+description: Use when the user is planning, drafting, revising, or checking a Chinese legal journal article, including CSSCI投稿论文、法学期刊论文、论文选题、提纲、正文、摘要、引注、Obsidian资料引用、目标期刊适配、需求拆解（五问）、材料边界、推理链审查、正文改写、行文生硬或版本管理；do not use for books, theses or dissertations, contracts, legal opinions, pleadings, or client advice.
 metadata:
-  version: "1.1.0"
+  version: "1.2.0-rc.1"
 ---
 
 # 中国法学论文写作
@@ -31,7 +31,8 @@ metadata:
 
 - 执行完整流程、选题、提纲、起草或修改时，读取 [workflow.md](references/workflow.md)。
 - 需求模糊、开始新项目或用户未说明研究思路时，读取 [requirement-decomposition.md](references/requirement-decomposition.md)。
-- 检查学术增量、核心框架、推理链完整性、章节衔接，或依据审稿意见修改时，读取 [argumentation-diagnostics.md](references/argumentation-diagnostics.md)；按当前任务选用检查，不把局部润色扩展成全文审核。
+- 提纲、起草或实质改稿时，读取 [argumentation-diagnostics.md](references/argumentation-diagnostics.md) 的“按命题检查理由”部分；检查增量、框架、章节或审稿意见时，再读取对应部分。
+- 起草正文、修改表达或处理“AI味”反馈时，读取 [legal-prose.md](references/legal-prose.md)；局部任务只处理指定范围，不扩展成全文审核。
 - 使用法律规范、案例、政策、数据或学术文献时，读取 [evidence-and-legal-validity.md](references/evidence-and-legal-validity.md)。
 - 起草正文、补引注、生成全文或执行引用审核时，必须读取 [citation-integrity.md](references/citation-integrity.md)。
 - 适配期刊、摘要、关键词、匿名或投稿要求时，读取 [journal-adaptation.md](references/journal-adaptation.md)。
@@ -87,11 +88,11 @@ metadata:
 - 确认法律相关性，但允许法学与经济学、社会学、政治学、技术研究等交叉。
 - 将研究范围压缩到可由现有材料和篇幅支持的程度。
 - 区分作者主张、他人观点、法律文本、裁判观点、经验事实与推测。
-- 对核心主张至少检查一个重要反方解释或反例。
+- 对核心主张检查实质相关的竞争解释与反例；回应可以是反驳、吸收、区分或缩窄主张，不凑反方数量。
 
 不要用“已有三篇相似论文”“必须三至四节”“必须固定字数”等机械阈值代替学术判断。
 
-结论不得以断言出现。每个核心结论应呈现完整推理链：证据（分组呈现，而非单例举例）→ 归纳共同特征 → 排除竞争解释 → 处理反方或反例 → 得出结论；论证按“材料 → 规律 → 结论”的顺序展开，使读者能沿材料复核归纳。实证归纳、规范性与统计性命题的具体要求及自查清单见 [argumentation-diagnostics.md](references/argumentation-diagnostics.md)。
+核心结论须有可复核的前提、理由和适用边界；说明材料为什么支持该判断。按命题类型选用 [论证检查](references/argumentation-diagnostics.md)，不把实证归纳作为统一方法。证明依赖关系不等于段落排列顺序：可以先提出判断再证明，也可以由疑难情形或解释分歧展开；说明性例子不能代替证明。
 
 ## 建立论点—证据—引注链
 
@@ -100,7 +101,7 @@ metadata:
 - 主张及其在全文中的功能；
 - 证据类型和来源编号；
 - 原文页码、条文、段落或案例定位；
-- 证据支持范围与局限；
+- 从证据到判断的推论理由、必要前提及支持范围与局限；
 - 反方材料；
 - 核验状态；只有 `VERIFIED` 来源可以支持最终稿中的来源性主张。
 
