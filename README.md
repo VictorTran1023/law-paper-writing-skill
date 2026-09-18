@@ -63,7 +63,7 @@
 
 这些检查保留不同研究方式的空间：新材料、反例和适用边界也可以构成贡献；并列章节不必改成递进结构；纯理论任务不强制补裁判案例。字数、节数和标题偏好不会自动成为所有论文的通则。章节表和反馈表按需使用，单条意见可以直接用短段落说明。
 
-核心结论须呈现完整推理链，不以断言出现；改稿交付时主动附新旧稿继承说明（沿用、修改、新增及各自依据）。
+核心结论须交代可复核的前提、理由和适用边界，允许先提出判断再证明；改稿交付时主动附新旧稿继承说明（沿用、修改、新增及各自依据）。
 
 详细规则见 [论证诊断](references/argumentation-diagnostics.md)，记录模板见 [章节衔接](assets/templates/claim-evidence-matrix.md) 与 [反馈落实表](assets/templates/revision-response.md)。
 
@@ -76,7 +76,7 @@
 - **资料协作**：仅使用指定范围内的 Obsidian 或其他资料；读取授权不等于写回授权。
 - **材料边界**：写作用料与查询纪律见下文「真实性与引用边界」。
 - **需求拆解**：需求模糊或新项目启动时，先用五问确认任务（做什么、给谁用、解决什么、用什么资料、交付什么）。
-- **推理链**：核心结论呈现完整推理链（证据→归纳→排除竞争解释→反例→结论），不以断言出现。
+- **论证理由**：按命题类型检查材料与结论之间的前提、理由和边界，处理重要竞争解释；不以统一归纳顺序约束所有正文。
 
 详细任务路由和交付要求见 [SKILL.md](SKILL.md)。
 
@@ -204,6 +204,8 @@ Word 正文、批注和修订的提取依赖运行环境的文档工具，本仓
 
 ### 5. 生成工作稿
 
+起草前按 [论证诊断](references/argumentation-diagnostics.md) 区分归纳、规范解释、制度评价与建议等判断；交代材料为什么支持结论，不把“材料→规律→结论”作为统一行文顺序。用 [正文表达](references/legal-prose.md) 检查句段推进，并参考 [合成改写示例](assets/examples/legal-prose-examples.md)。有原稿时保留有效表达和立场强弱，避免整篇统一改成模型惯用语气。
+
 在写作时同步插入脚注标识。来源已定位时可先使用：
 
 ```markdown
@@ -324,13 +326,15 @@ law-paper-writing-skill/
 ├── references/
 │   ├── workflow.md                   # 论文工作流
 │   ├── requirement-decomposition.md  # 需求拆解（五问）
-│   ├── argumentation-diagnostics.md  # 学术增量、框架、推理链、章节与反馈诊断
+│   ├── argumentation-diagnostics.md  # 学术增量、命题理由、章节与反馈诊断
+│   ├── legal-prose.md                # 正文推进与作者表达保留
 │   ├── evidence-and-legal-validity.md # 证据与法律资料核验
 │   ├── citation-integrity.md         # 引注完整性
 │   ├── journal-adaptation.md         # 目标期刊适配
 │   └── obsidian-hermes-workflow.md   # Obsidian 协作边界
 ├── assets/
 │   ├── readme/                       # README 视觉资产
+│   ├── examples/legal-prose-examples.md # 合成正文对照与改写说明
 │   └── templates/
 │       ├── claim-evidence-matrix.md  # 论点证据与章节衔接
 │       ├── revision-response.md      # 审稿反馈落实
@@ -339,7 +343,10 @@ law-paper-writing-skill/
 │   ├── pressure-tests.md             # 边界压力测试
 │   ├── argumentation-cases.md         # 论证诊断与避免误判的场景
 │   ├── generic-fusion-cases.md       # 通用规则融合新增场景
-│   └── 2026-09-09-review.md           # 检验方法、结果与限制
+│   ├── writing-inputs.md             # 独立写作任务与封闭材料
+│   ├── writing-evaluation.md         # 对照方法与评阅规则
+│   ├── 2026-09-18-writing-review.md   # 本轮实际运行记录与局限
+│   └── 2026-09-09-review.md           # 早期检验方法、结果与限制
 ├── docs/superpowers/                  # 设计与实施记录
 ├── README.md
 ├── CHANGELOG.md                       # 版本与变更记录
@@ -380,9 +387,11 @@ gh auth status
 
 ## 检验与能力边界
 
-检验材料共 27 个场景：[12 个论证诊断场景](evals/argumentation-cases.md)、[9 个边界压力测试场景](evals/pressure-tests.md) 与 [6 个通用规则融合场景](evals/generic-fusion-cases.md)（材料边界、需求拆解、推理链、改稿继承、统计限定），覆盖论证缺口，也覆盖不应误判的合理写法；均须人工判断，不能替代投稿前的内容核查。检验分两轮完成：2026-09-09 桌面走查（记录见下段）；2026-09-14 规则融合后完成技能元数据、相对链接和差异检查，并保留既有真实性与资料权限规则。
+原有诊断与边界检验材料共 27 个场景：[12 个论证诊断场景](evals/argumentation-cases.md)、[9 个边界压力测试场景](evals/pressure-tests.md) 与 [6 个通用规则融合场景](evals/generic-fusion-cases.md)（材料边界、需求拆解、推理链、改稿继承、统计限定），覆盖论证缺口，也覆盖不应误判的合理写法；均须人工判断，不能替代投稿前的内容核查。检验分两轮完成：2026-09-09 桌面走查（记录见下段）；2026-09-14 规则融合后完成技能元数据、相对链接和差异检查，并保留既有真实性与资料权限规则。
 
 [检验记录](evals/2026-09-09-review.md) 是同一助手完成的桌面走查，不是独立模型盲测或多模型性能比较。它不证明特定模型能稳定识别所有论文问题，也不代表实际论文的法律、案例与文献已经核验。运行效果仍取决于材料完整性、模型和可用的检索、文档工具。
+
+本轮候选版新增 [4 个写作与合理写法保护任务](evals/writing-inputs.md)，另列 [评阅方法](evals/writing-evaluation.md)。哪些实际执行、原始输出和检查局限见 [本轮记录](evals/2026-09-18-writing-review.md)。小样本试写、规则校验和完整论文盲评是不同层级的证据，不能互相代替；不承诺消除“AI味”或提高录用率。
 
 ## 来源说明
 
