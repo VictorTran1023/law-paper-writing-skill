@@ -1,8 +1,8 @@
 ---
 name: chinese-law-paper-writing
-description: Use when the user is planning, drafting, revising, or checking a Chinese legal journal article, including CSSCI投稿论文、法学期刊论文、论文选题、提纲、正文、摘要、引注、引注体例与格式规范、Obsidian资料引用、目标期刊适配、需求拆解（五问）、材料边界、推理链审查、正文改写、行文生硬或版本管理；do not use for books, theses or dissertations, contracts, legal opinions, pleadings, or client advice.
+description: Use when the user is planning, drafting, revising, or checking a Chinese legal journal article, including CSSCI投稿论文、法学期刊论文、论文选题、提纲、正文、摘要、引注、引注体例与格式规范、Obsidian资料引用、目标期刊适配、需求拆解（五问）、材料边界、推理链审查、文献综述、审读反馈落实、正文改写、行文生硬或版本管理；do not use for books, theses or dissertations, contracts, legal opinions, pleadings, or client advice.
 metadata:
-  version: "1.2.0"
+  version: "1.3.0"
 ---
 
 # 中国法学论文写作
@@ -31,7 +31,7 @@ metadata:
 
 - 执行完整流程、选题、提纲、起草或修改时，读取 [workflow.md](references/workflow.md)。
 - 需求模糊、开始新项目或用户未说明研究思路时，读取 [requirement-decomposition.md](references/requirement-decomposition.md)。
-- 提纲、起草或实质改稿时，读取 [argumentation-diagnostics.md](references/argumentation-diagnostics.md) 的“按命题检查理由”部分；检查增量、框架、章节或审稿意见时，再读取对应部分。
+- 提纲、起草或实质改稿时，读取 [argumentation-diagnostics.md](references/argumentation-diagnostics.md) 的“按命题检查理由”部分；检查增量、框架、章节、文献综述或审稿意见时，再读取对应部分。
 - 起草正文、修改表达或处理“AI味”反馈时，读取 [legal-prose.md](references/legal-prose.md)；局部任务只处理指定范围，不扩展成全文审核。
 - 使用法律规范、案例、政策、数据或学术文献时，读取 [evidence-and-legal-validity.md](references/evidence-and-legal-validity.md)。
 - 起草正文、补引注、生成全文或执行引用审核时，必须读取 [citation-integrity.md](references/citation-integrity.md)。
@@ -164,4 +164,6 @@ metadata:
 - 把一般经验值写成所有 CSSCI 法学期刊的统一标准；
 - 为迎合用户要求而补造引用信息；
 - 结语重复正文而不给出答案；
-- 需求模糊时自行猜测方向动笔。
+- 需求模糊时自行猜测方向动笔；
+- 在段末集中堆列一组来源，标不出观点与文献的对应关系；
+- 用自造术语或宽泛流行词替代具体分析，重要概念不给出处。
