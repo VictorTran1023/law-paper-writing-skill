@@ -9,7 +9,7 @@
 - 新增 `references/citation-format.md`：手册一般规范与中文文献体例（引用原则、引注体例、法律文件、司法案例、统计数据，附快速示例表 32 条），条号可回查。
 - 新增 `references/citation-format-foreign.md`：引注格式规范·外文文献（英、法、德、意大利、俄、日六语种，第95—150条）。
 - 接线：`SKILL.md` 读取清单与「生成正文与引注」补入默认体例；`citation-integrity.md` 增设「格式规范」指引；`citation-audit.md` 新增 3 项格式检查；`journal-adaptation.md` 明确默认体例与期刊优先并存。
-- 新增 `evals/citation-format-cases.md`（8 个引注格式场景，F1—F8）；README 结构树、使用指南与检验段同步更新。
+- 新增 `evals/citation-format-cases.md`（8 个引注格式场景，F1—F8），`evals/pressure-tests.md` 尾部指引同步指向该场景；README 结构树、使用指南与检验段同步更新。
 
 ## 1.1.0（2026-09-15）
 
