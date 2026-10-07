@@ -382,7 +382,7 @@
 - [29]（德文）Claus Roxin, Strafrecht Allgemeiner Teil, Band I, 4. Aufl., C.H.Beck, 2006, § 15 Rn. 19.
 - [30]（意大利文）Angelo Falzea, L'offerta reale e la liberazione coattiva del debitore, Giuffrè, 1947, p. 34 s.
 - [31]（俄文）Елена А. Дубовицкая. Европейское корпоративное право. Волтерс Клувер Россия, 2008. с. 6.
-- [32]（日文）我妻栄『新訂担保物法（民法講義Ⅲ）』（有斐閣，1971年）50頁
+- [32]（日文）我妻栄『新訂担保物法（民法講義Ⅲ）』（有斐閣，1971年）50頁。
 
 ---
 
