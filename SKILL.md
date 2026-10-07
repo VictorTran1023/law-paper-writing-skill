@@ -1,8 +1,8 @@
 ---
 name: chinese-law-paper-writing
-description: Use when the user is planning, drafting, revising, or checking a Chinese legal journal article, including CSSCI投稿论文、法学期刊论文、论文选题、提纲、正文、摘要、引注、Obsidian资料引用、目标期刊适配、需求拆解（五问）、材料边界、推理链审查、正文改写、行文生硬或版本管理；do not use for books, theses or dissertations, contracts, legal opinions, pleadings, or client advice.
+description: Use when the user is planning, drafting, revising, or checking a Chinese legal journal article, including CSSCI投稿论文、法学期刊论文、论文选题、提纲、正文、摘要、引注、引注体例与格式规范、Obsidian资料引用、目标期刊适配、需求拆解（五问）、材料边界、推理链审查、正文改写、行文生硬或版本管理；do not use for books, theses or dissertations, contracts, legal opinions, pleadings, or client advice.
 metadata:
-  version: "1.2.0-rc.1"
+  version: "1.2.0-rc.2"
 ---
 
 # 中国法学论文写作
@@ -35,6 +35,7 @@ metadata:
 - 起草正文、修改表达或处理“AI味”反馈时，读取 [legal-prose.md](references/legal-prose.md)；局部任务只处理指定范围，不扩展成全文审核。
 - 使用法律规范、案例、政策、数据或学术文献时，读取 [evidence-and-legal-validity.md](references/evidence-and-legal-validity.md)。
 - 起草正文、补引注、生成全文或执行引用审核时，必须读取 [citation-integrity.md](references/citation-integrity.md)。
+- 书写或核对引注格式时，读取 [citation-format.md](references/citation-format.md)；涉及外文文献的，同时读取 [citation-format-foreign.md](references/citation-format-foreign.md)。
 - 适配期刊、摘要、关键词、匿名或投稿要求时，读取 [journal-adaptation.md](references/journal-adaptation.md)。
 - 使用 Obsidian、Markdown 笔记或知识库时，读取 [obsidian-hermes-workflow.md](references/obsidian-hermes-workflow.md)。
 
@@ -111,7 +112,7 @@ metadata:
 
 生成完整文章、章节或投稿稿件时，凡使用他人观点、原文、数据、案例、法律规范或其他非一般常识的外部事实，必须在对应句或段落后设置引注标识。不得只在文末罗列参考文献。
 
-未指定期刊和输出格式时，Markdown 工作稿使用脚注标识：
+未指定期刊和输出格式时，Markdown 工作稿使用脚注标识；引注格式默认按《法学引注手册》（第二版）体例书写（见 [citation-format.md](references/citation-format.md)，涉及外文文献时另见 [citation-format-foreign.md](references/citation-format-foreign.md)）；目标期刊另有正式要求的，从其要求：
 
 ```markdown
 相关研究提出……。[^S001]
