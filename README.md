@@ -339,7 +339,7 @@ law-paper-writing-skill/
 ├── assets/
 │   ├── readme/                       # README 视觉资产
 │   ├── examples/legal-prose-examples.md # 合成正文对照与改写说明
-│   ├── examples/abstract-examples.md # 合成摘要对照
+│   ├── examples/abstract-examples.md # 合成摘要示例（仅供诊断与修改时参考）
 │   └── templates/
 │       ├── claim-evidence-matrix.md  # 论点证据与章节衔接
 │       ├── revision-response.md      # 审稿反馈落实
@@ -394,7 +394,7 @@ gh auth status
 
 ## 检验与能力边界
 
-原有诊断与边界检验材料共 27 个场景：[12 个论证诊断场景](evals/argumentation-cases.md)、[9 个边界压力测试场景](evals/pressure-tests.md) 与 [6 个通用规则融合场景](evals/generic-fusion-cases.md)（材料边界、需求拆解、推理链、改稿继承、统计限定）；2026-10-07 引注体例融合新增 [8 个引注格式场景](evals/citation-format-cases.md)（默认体例、期刊优先、再次引用、案例、网络、外文、标点与手册边界）；2026-10-07 审读反馈固化新增、2026-10-08 查漏补缺扩充，共 [17 个审读反馈场景](evals/review-feedback-cases.md)（H1—H17）。覆盖论证缺口，也覆盖不应误判的合理写法；均须人工判断，不能替代投稿前的内容核查。检验分两轮完成：2026-09-09 桌面走查（记录见下段）；2026-09-14 规则融合后完成技能元数据、相对链接和差异检查，并保留既有真实性与资料权限规则。
+原有诊断与边界检验材料共 27 个场景：[12 个论证诊断场景](evals/argumentation-cases.md)、[9 个边界压力测试场景](evals/pressure-tests.md) 与 [6 个通用规则融合场景](evals/generic-fusion-cases.md)（材料边界、需求拆解、推理链、改稿继承、统计限定）；2026-10-07 引注体例融合新增 [8 个引注格式场景](evals/citation-format-cases.md)（默认体例、期刊优先、再次引用、案例、网络、外文、标点与手册边界）；2026-10-07 审读反馈固化新增、2026-10-08 查漏补缺扩充，共 [18 个审读反馈场景](evals/review-feedback-cases.md)（H1—H18）。覆盖论证缺口，也覆盖不应误判的合理写法；均须人工判断，不能替代投稿前的内容核查。检验分两轮完成：2026-09-09 桌面走查（记录见下段）；2026-09-14 规则融合后完成技能元数据、相对链接和差异检查，并保留既有真实性与资料权限规则。
 
 [检验记录](evals/2026-09-09-review.md) 是同一助手完成的桌面走查，不是独立模型盲测或多模型性能比较。它不证明特定模型能稳定识别所有论文问题，也不代表实际论文的法律、案例与文献已经核验。运行效果仍取决于材料完整性、模型和可用的检索、文档工具。
 

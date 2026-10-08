@@ -30,8 +30,8 @@
 | G9 | 未指定期刊的 DOCX 工作稿页边距暂用默认“普通” | `journal-adaptation.md` §无目标期刊 |
 | G10 | 统计对象一致：删去超出依据的“不同来源” | `evidence-and-legal-validity.md` |
 | G11 | 快速示例表：与流传摘编本不一致时回查印刷本 | `citation-format.md` §十 |
-| G12 | 摘要示范：依据反馈所附的一组正反摘要示例，归纳差异，另写合成对照（不采用原文） | `assets/examples/abstract-examples.md`，由 `journal-adaptation.md` 链接 |
-| 配套 | evals H11—H17 及 H2、H5、H6 补强；SKILL.md、README、CHANGELOG、压力测试指引接线；旧方案文件脱敏 | 见第三节 |
+| G12 | 摘要标准化：依据反馈所附的一组正反摘要示例归纳差异，写成四个功能位、写法、自查清单与套语类型表；起草时只按规则执行。示例只保留一个合成的合格摘要及逐句标注，限于诊断和修改时参考；不收录不合格整段例文，以免被模仿 | `journal-adaptation.md` §摘要与关键词；`assets/examples/abstract-examples.md` |
+| 配套 | evals H11—H18 及 H2、H5、H6 补强；SKILL.md、README、CHANGELOG、压力测试指引接线；旧方案文件脱敏 | 见第三节 |
 
 **不采纳**（依据既有纪律“审稿人个人偏好不升级为通用门槛”）：虚词的文白替换、段首序列词、改法前后不一致的标题格式调整。**待作者确认后再定**：一类“补充文献信息”批语的确切所指。反馈所附的一组正反示例经作者确认用于示范摘要写法，已按 G12 处理。
 
@@ -46,7 +46,7 @@
 | `references/evidence-and-legal-validity.md` | 修改（G10） |
 | `references/citation-format.md` | 修改（G11） |
 | `assets/examples/abstract-examples.md` | 新增（G12） |
-| `evals/review-feedback-cases.md` | 修改（H11—H17 新增，H2、H5、H6 补强） |
+| `evals/review-feedback-cases.md` | 修改（H11—H18 新增，H2、H5、H6 补强） |
 | `evals/pressure-tests.md`、`SKILL.md`、`README.md`、`CHANGELOG.md` | 接线（版本 1.4.0） |
 | `docs/superpowers/plans/2026-09-14-generic-rules-fusion.md`、`2026-10-07-citation-format-fusion.md` | 脱敏（项目词改为通用描述） |
 | `docs/superpowers/plans/2026-10-08-review-feedback-gap-fix.md` | 新增（本方案） |
