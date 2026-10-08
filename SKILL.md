@@ -36,7 +36,7 @@ metadata:
 - 使用法律规范、案例、政策、数据或学术文献时，读取 [evidence-and-legal-validity.md](references/evidence-and-legal-validity.md)。
 - 起草正文、补引注、生成全文或执行引用审核时，必须读取 [citation-integrity.md](references/citation-integrity.md)。
 - 书写或核对引注格式时，读取 [citation-format.md](references/citation-format.md)；涉及外文文献的，同时读取 [citation-format-foreign.md](references/citation-format-foreign.md)。
-- 适配期刊、摘要、关键词、匿名或投稿要求时，读取 [journal-adaptation.md](references/journal-adaptation.md)。
+- 适配期刊、匿名或投稿要求时，读取 [journal-adaptation.md](references/journal-adaptation.md)；写或改摘要、关键词时，按其中“摘要与关键词”的功能位、写法与自查清单执行。
 - 使用 Obsidian、Markdown 笔记或知识库时，读取 [obsidian-hermes-workflow.md](references/obsidian-hermes-workflow.md)。
 
 ## 建立任务边界
