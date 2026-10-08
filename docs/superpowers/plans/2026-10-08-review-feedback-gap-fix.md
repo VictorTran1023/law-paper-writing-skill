@@ -30,9 +30,10 @@
 | G9 | 未指定期刊的 DOCX 工作稿页边距暂用默认“普通” | `journal-adaptation.md` §无目标期刊 |
 | G10 | 统计对象一致：删去超出依据的“不同来源” | `evidence-and-legal-validity.md` |
 | G11 | 快速示例表：与流传摘编本不一致时回查印刷本 | `citation-format.md` §十 |
+| G12 | 摘要示范：依据反馈所附的一组正反摘要示例，归纳差异，另写合成对照（不采用原文） | `assets/examples/abstract-examples.md`，由 `journal-adaptation.md` 链接 |
 | 配套 | evals H11—H17 及 H2、H5、H6 补强；SKILL.md、README、CHANGELOG、压力测试指引接线；旧方案文件脱敏 | 见第三节 |
 
-**不采纳**（依据既有纪律“审稿人个人偏好不升级为通用门槛”）：虚词的文白替换、段首序列词、改法前后不一致的标题格式调整。**待作者确认后再定**：反馈中一组示例对的用途、一类“补充文献信息”批语的确切所指。
+**不采纳**（依据既有纪律“审稿人个人偏好不升级为通用门槛”）：虚词的文白替换、段首序列词、改法前后不一致的标题格式调整。**待作者确认后再定**：一类“补充文献信息”批语的确切所指。反馈所附的一组正反示例经作者确认用于示范摘要写法，已按 G12 处理。
 
 ## 三、文件级变更
 
@@ -44,6 +45,7 @@
 | `references/journal-adaptation.md` | 修改（G8、G9） |
 | `references/evidence-and-legal-validity.md` | 修改（G10） |
 | `references/citation-format.md` | 修改（G11） |
+| `assets/examples/abstract-examples.md` | 新增（G12） |
 | `evals/review-feedback-cases.md` | 修改（H11—H17 新增，H2、H5、H6 补强） |
 | `evals/pressure-tests.md`、`SKILL.md`、`README.md`、`CHANGELOG.md` | 接线（版本 1.4.0） |
 | `docs/superpowers/plans/2026-09-14-generic-rules-fusion.md`、`2026-10-07-citation-format-fusion.md` | 脱敏（项目词改为通用描述） |
