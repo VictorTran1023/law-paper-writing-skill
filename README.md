@@ -339,6 +339,7 @@ law-paper-writing-skill/
 ├── assets/
 │   ├── readme/                       # README 视觉资产
 │   ├── examples/legal-prose-examples.md # 合成正文对照与改写说明
+│   ├── examples/abstract-examples.md # 合成摘要对照
 │   └── templates/
 │       ├── claim-evidence-matrix.md  # 论点证据与章节衔接
 │       ├── revision-response.md      # 审稿反馈落实
