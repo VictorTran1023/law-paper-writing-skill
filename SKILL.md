@@ -1,6 +1,6 @@
 ---
 name: chinese-law-paper-writing
-description: Use when the user is planning, drafting, revising, or checking a Chinese legal journal article, including CSSCI投稿论文、法学期刊论文、论文选题、提纲、正文、摘要、引注、引注体例与格式规范、Obsidian资料引用、目标期刊适配、需求拆解（五问）、材料边界、推理链审查、文献综述、审读反馈落实、正文改写、行文生硬或版本管理；do not use for books, theses or dissertations, contracts, legal opinions, pleadings, or client advice.
+description: 用于中文法学期刊论文选题、写作、修改和引注核查；不用于专著、学位论文、合同、法律意见书、诉讼文书或个案咨询。涵盖CSSCI投稿、提纲、正文、摘要、引注体例与格式规范、Obsidian资料引用、目标期刊适配、需求拆解（五问）、材料边界、推理链审查、文献综述、审读反馈落实、正文改写、行文生硬问题及论文版本管理。
 metadata:
   version: "1.4.0"
 ---
