@@ -31,7 +31,7 @@ metadata:
 
 - 执行完整流程、选题、提纲、起草或修改时，读取 [workflow.md](references/workflow.md)。
 - 需求模糊、开始新项目或用户未说明研究思路时，读取 [requirement-decomposition.md](references/requirement-decomposition.md)。
-- 提纲、起草或实质改稿时，读取 [argumentation-diagnostics.md](references/argumentation-diagnostics.md) 的“按命题检查理由”部分；检查增量、框架、章节、引言、文献综述或审稿意见时，再读取对应部分。
+- 提纲、起草或实质改稿时，读取 [argumentation-diagnostics.md](references/argumentation-diagnostics.md) 的“按命题检查理由”部分；检查增量、框架、章节、引言、文献综述或审稿意见时，再读取对应部分。专项检查按所涉命题和材料触发，不要求每篇论文加入比较法、案例实证或证明责任。
 - 起草正文、修改表达或处理“AI味”反馈时，读取 [legal-prose.md](references/legal-prose.md)；局部任务只处理指定范围，不扩展成全文审核。
 - 使用法律规范、案例、政策、数据或学术文献时，读取 [evidence-and-legal-validity.md](references/evidence-and-legal-validity.md)。
 - 起草正文、补引注、生成全文或执行引用审核时，必须读取 [citation-integrity.md](references/citation-integrity.md)。
